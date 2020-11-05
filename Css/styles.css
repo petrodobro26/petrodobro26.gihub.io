@@ -1,70 +1,102 @@
 *{
 	margin: 0;
 	padding: 0;
-}
-body {
-    font-family: arial;
-}
-.menu nav{
-	width: 100%;
-	display: table;
-}
-.menu nav ul {
-	display: table-row;
-}
-.menu nav li {
-	display: table-cell;
-	position: relative;
-	background: purple;
-}
-.menu nav ul li:hover, .menu nav a:hover {
-	background: red;
-}
-.menu nav li a {
-	display: block;
-	padding: 8px 15px;
-	color: aqua;
-	text-align: center;
-}
-.name h1{
-	text-align: center;
-	color: yellow;
-}
-.photo{
-	float: left;
-	margin-left: 50px;
-	display: inline-block;
-	text-align: center;
-}
-img {
-	width: 300px;
-}
-.information{
-	width: 50%;
-	float: left;
-	padding: 20px 25px;
-	
+	box-sizing: border-box;
 }
 
-h2{
-	color: darkred;
-	text-align: left;
+body{
+	font-family: open sans,sans-serif;
+}
+
+li{
+	display: block;
+	padding: 5px 0;
+}
+p{
+	padding-top: 8px;
+	color: blue;
+}
+a{
+	color: blue;
+	text-decoration: none;
+	font-size: 18px;
+}
+.clearfix{
+  clear: both;
+  content: '';
+	display: table;
+	width: 100%;
+}
+.main{
+	min-width: 825px;
+}
+
+.left_column{
+	width: 40%;
+	height: 100vh;
+	background: url(../img/photo-1.jpg) no-repeat center top / cover;
+	display: block;
+	float: left;
+	overflow: auto;
+}
+.right_column{
+	width: 60%;
+	height: 100vh;
+	background: url(../img/photo-2.jpg) no-repeat center top / cover;
+	display: block;
+	float: right;
+	overflow: auto;
+}
+.container_left{
+	width: 60%;
+	min-width: 250px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+}
+.container_right{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.photo{
+	height: 200px;
+	width: 200px;
+	border: 4px solid;
+	overflow: hidden;
+	border-color: #111;
+	border-radius: 5%;
+	margin: 0 auto;
+}
+.contact a:hover{
+	text-decoration: underline;
+	color: blue;
+}
+.name h1{
+	font-size: 40px;
+}
+.container_right h1, h3{
+	display: inline-block;
+	color: olive;
+	text-transform: uppercase;
+}
+.education, .work1, .interest, .marital_status{
+	padding-top: 30px;	
 }
 .btn{
-display: block;
-width: 150px;
-height: 50px;
-border: 1px solid #2e8b57;
-border-radius: 10px;
-text-transform: uppercase;
-text-align: center;
-line-height: 50px;
-text-decoration: none;
-color: #2e8b57;
-font-weight: bold;
+	background: #D9E59B;
+	display: block;
+	width: 150px;
+	border-radius: 15px;
+	border: 2px solid red;
+	padding: 10px 0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	color: red;
 }
+
 .btn:hover{
-	border: 1px solid #fff;
-	color: #fff;
-	background: #2e8b57;
+	color: red;
+	background: #252525;
 }
