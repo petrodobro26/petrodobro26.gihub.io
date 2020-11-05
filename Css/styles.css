@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: arial;
+}
+.menu nav{
+	width: 100%;
+	display: table;
+}
+.menu nav ul {
+	display: table-row;
+}
+.menu nav li {
+	display: table-cell;
+	position: relative;
+	background: purple;
+}
+.menu nav ul li:hover, .menu nav a:hover {
+	background: red;
+}
+.menu nav li a {
+	display: block;
+	padding: 8px 15px;
+	color: aqua;
+	text-align: center;
+}
+.name h1{
+	text-align: center;
+	color: yellow;
+}
+.photo{
+	float: left;
+	margin-left: 50px;
+	display: inline-block;
+	text-align: center;
+}
+img {
+	width: 300px;
+}
+.information{
+	width: 50%;
+	float: left;
+	padding: 20px 25px;
+	
+}
+
+h2{
+	color: darkred;
+	text-align: left;
+}
+.btn{
+display: block;
+width: 150px;
+height: 50px;
+border: 1px solid #2e8b57;
+border-radius: 10px;
+text-transform: uppercase;
+text-align: center;
+line-height: 50px;
+text-decoration: none;
+color: #2e8b57;
+font-weight: bold;
+}
+.btn:hover{
+	border: 1px solid #fff;
+	color: #fff;
+	background: #2e8b57;
+}
